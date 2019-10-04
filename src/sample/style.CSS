@@ -1,0 +1,64 @@
+.ll:hover{
+    -fx-background-radius: 150;
+    -fx-background-color: white;
+    -fx-cursor: hand;
+}
+
+.uu{
+    -fx-fill: white;
+}
+.ll:hover  .uu{
+        -fx-fill: black;
+}
+
+.uploadL{
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+}
+.uploadL:hover{
+    -fx-background-color: #d84315;
+    -fx-background-radius: 20;
+
+    -fx-cursor: hand;
+}
+.uploadL:hover  .uploadF{
+    -fx-fill: white;
+}
+
+.signupButton:hover{
+    -fx-opacity: 1;
+}
+.text-field:hover{
+    -fx-opacity: 1;
+}
+.text-area:hover{
+    -fx-opacity: 1;
+}
+.combo-box:hover{
+    -fx-opacity: 1;
+}
+.dateTime:hover{
+    -fx-opacity: 1;
+}
+.userDetails:hover{
+    -fx-opacity: 1;
+}
+
+.reL{
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+}
+
+.reL:hover{
+    -fx-background-color: #707070;
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+}
+
+.reL:hover .reF{
+    -fx-fill: white;
+}
+.imageUser{
+    -fx-background-radius: 50;
+}

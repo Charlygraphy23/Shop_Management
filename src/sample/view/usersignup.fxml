@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="userPane" prefHeight="690.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.UserSignupController">
+   <children>
+      <ImageView fitHeight="690.0" fitWidth="987.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/flat-backgrounds_963128.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="userFirstName" alignment="CENTER" focusColor="#ff6600" layoutX="89.0" layoutY="129.0" opacity="0.9" prefHeight="33.0" prefWidth="441.0" promptText="Firstname" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" styleClass="text-field" stylesheets="@../style.CSS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label alignment="CENTER" layoutX="378.0" layoutY="43.0" text="Sign Up Form" textFill="WHITE">
+         <font>
+            <Font name="Matura MT Script Capitals" size="27.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="userLastName" alignment="CENTER" focusColor="#ff6600" layoutX="89.0" layoutY="179.0" opacity="0.9" prefHeight="33.0" prefWidth="441.0" promptText="Lastname" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" stylesheets="@../style.CSS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="userUsername" alignment="CENTER" focusColor="#ff6600" layoutX="89.0" layoutY="229.0" opacity="0.9" prefHeight="33.0" prefWidth="441.0" promptText="Username" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" stylesheets="@../style.CSS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="userPassword" alignment="CENTER" focusColor="#ff8c00" layoutX="89.0" layoutY="277.0" opacity="0.9" prefHeight="33.0" prefWidth="441.0" promptText="Password" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" stylesheets="@../style.CSS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXComboBox fx:id="userSelectshopCombo" focusColor="#ff9900" layoutX="89.0" layoutY="325.0" opacity="0.9" prefHeight="33.0" prefWidth="178.0" promptText="Select Shop" style="-fx-background-color: #FFFF; -fx-background-radius: 20; -fx-padding: 3;" stylesheets="@../style.CSS" />
+      <JFXComboBox fx:id="userSelectGenderCombo" focusColor="#ff9900" layoutX="352.0" layoutY="325.0" opacity="0.9" prefHeight="33.0" prefWidth="178.0" promptText="Select Gender" style="-fx-background-color: #FFFF; -fx-background-radius: 20; -fx-padding: 3;" stylesheets="@../style.CSS" />
+      <JFXDatePicker id="dateTime" fx:id="userSelectDOB" defaultColor="#ffa305" layoutX="89.0" layoutY="380.0" opacity="0.9" prefHeight="31.0" prefWidth="178.0" promptText="Select DOB" style="-fx-background-color: #FFFF; -fx-background-radius: 20; -fx-padding: 3;" styleClass="dateTime" stylesheets="@../style.CSS" />
+      <JFXTextField fx:id="userAgeLabel" alignment="CENTER" editable="false" focusColor="#ffa100" layoutX="352.0" layoutY="379.0" opacity="0.9" prefHeight="33.0" prefWidth="178.0" promptText="Age" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" stylesheets="@../style.CSS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="userMobileNo" alignment="CENTER" focusColor="#ffa100" layoutX="89.0" layoutY="435.0" opacity="0.9" prefHeight="33.0" prefWidth="441.0" promptText="Mobile No" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" stylesheets="@../style.CSS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextArea fx:id="userPAddress" focusColor="#ff7300" layoutX="89.0" layoutY="492.0" opacity="0.9" prefHeight="121.0" prefWidth="441.0" promptText="Enter Parmanent Address" style="-fx-background-color: #FFFF;" stylesheets="@../style.CSS" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextArea>
+      <Label alignment="CENTER" layoutX="707.0" layoutY="134.0" prefHeight="192.0" prefWidth="160.0" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" text="Upload a Photo" />
+      <ImageView fx:id="userPhotoImageView" fitHeight="173.0" fitWidth="152.0" layoutX="710.0" layoutY="145.0" pickOnBounds="true" />
+      <Label id="uploadL" fx:id="userPhotoUploadButton" alignment="CENTER" layoutX="761.0" layoutY="345.0" prefHeight="26.0" prefWidth="50.0" styleClass="uploadL" stylesheets="@../style.CSS">
+         <graphic>
+            <FontAwesomeIconView id="uploadF" glyphName="CHEVRON_CIRCLE_UP" size="25" styleClass="uploadF" wrappingWidth="16.14285659790039" />
+         </graphic>
+      </Label>
+      <JFXButton id="signupButton" fx:id="userSignupButton" defaultButton="true" layoutX="646.0" layoutY="527.0" opacity="0.82" prefHeight="51.0" prefWidth="313.0" style="-fx-background-color: #ff7543;" styleClass="signupButton" stylesheets="@../style.CSS" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label id="ll" alignment="CENTER" contentDisplay="CENTER" layoutX="961.0" layoutY="4.0" onMouseClicked="#close" prefHeight="21.0" prefWidth="25.0" styleClass="ll" stylesheets="@../style.CSS">
+         <graphic>
+            <FontAwesomeIconView id="uu" glyphName="CLOSE" styleClass="uu" />
+         </graphic>
+      </Label>
+      <JFXDatePicker id="dateTime" fx:id="userShopOpenDate" defaultColor="#ffa305" layoutX="638.0" layoutY="427.0" opacity="0.9" prefHeight="31.0" prefWidth="313.0" promptText="Select Date of Openning Shop" style="-fx-background-color: #FFFF; -fx-background-radius: 20; -fx-padding: 3;" styleClass="dateTime" stylesheets="@../style.CSS" />
+   </children>
+</AnchorPane>

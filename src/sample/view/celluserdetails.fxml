@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="userPane" prefHeight="155.0" prefWidth="513.0" style="-fx-background-color: #424242;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="23.0" prefHeight="94.0" prefWidth="97.0" style="-fx-background-color: #FFFF; -fx-background-radius: 150;" stylesheets="@../style.CSS">
+         <graphic>
+            <ImageView id="imageUser" fx:id="userImage" fitHeight="73.0" fitWidth="69.0" pickOnBounds="true" styleClass="imageUser" />
+         </graphic></Label>
+      <Label fx:id="userId" layoutX="122.0" layoutY="24.0" prefHeight="20.0" prefWidth="83.0" text="ID" textFill="WHITE" />
+      <Label fx:id="name" layoutX="235.0" layoutY="24.0" prefHeight="20.0" prefWidth="228.0" text="Name" textFill="WHITE" />
+      <Label fx:id="userName" layoutX="121.0" layoutY="57.0" prefHeight="20.0" prefWidth="184.0" text="Username" textFill="WHITE" />
+      <Label fx:id="gender" layoutX="321.0" layoutY="57.0" prefHeight="20.0" prefWidth="128.0" text="Gender" textFill="WHITE" />
+      <Label fx:id="dob" layoutX="121.0" layoutY="87.0" prefHeight="20.0" prefWidth="128.0" text="DOB" textFill="WHITE" />
+      <Label fx:id="mobNo" layoutX="321.0" layoutY="87.0" prefHeight="20.0" prefWidth="178.0" text="Mob No" textFill="WHITE" />
+      <Label fx:id="address" layoutX="116.0" layoutY="114.0" prefHeight="20.0" prefWidth="178.0" text="Address" textFill="WHITE" wrapText="true" />
+      <Label fx:id="shopId" layoutX="317.0" layoutY="114.0" prefHeight="20.0" prefWidth="178.0" text="Shop id" textFill="WHITE" wrapText="true" />
+      <Label fx:id="openningDate" layoutY="137.0" prefHeight="20.0" prefWidth="265.0" style="-fx-background-color: #ff5722;" text="Openning Date" textFill="WHITE" wrapText="true" />
+      <Label fx:id="lastUpdateddate" alignment="CENTER_RIGHT" layoutX="249.0" layoutY="137.0" prefHeight="20.0" prefWidth="265.0" style="-fx-background-color: #ff5722;" text="Last Updated Date" textFill="WHITE" wrapText="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="668.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.UpdateUserDetails">
+   <children>
+      <ImageView fitHeight="690.0" fitWidth="996.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/50bf7d54ee54f9416fc5e65c00c2efd9.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="userUpdateFirstName" alignment="CENTER" focusColor="#ff6600" layoutX="99.0" layoutY="139.0" opacity="0.9" prefHeight="33.0" prefWidth="441.0" promptText="Firstname" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" styleClass="text-field" stylesheets="@../style.CSS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="userUpdateLastName" alignment="CENTER" focusColor="#ff6600" layoutX="99.0" layoutY="189.0" opacity="0.9" prefHeight="33.0" prefWidth="441.0" promptText="Lastname" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" stylesheets="@../style.CSS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="userUpdateUsername" alignment="CENTER" focusColor="#ff6600" layoutX="99.0" layoutY="239.0" opacity="0.9" prefHeight="33.0" prefWidth="441.0" promptText="Username" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" stylesheets="@../style.CSS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="userUpdateSelectGenderCombo" focusColor="#ff9900" layoutX="362.0" layoutY="293.0" opacity="0.9" prefHeight="33.0" prefWidth="178.0" promptText="Select Gender" style="-fx-background-color: #FFFF; -fx-background-radius: 20; -fx-padding: 3;" stylesheets="@../style.CSS" />
+      <JFXDatePicker id="dateTime" fx:id="userUpdateSelectDOB" defaultColor="#ffa305" layoutX="109.0" layoutY="294.0" opacity="0.9" prefHeight="31.0" prefWidth="178.0" promptText="Select DOB" style="-fx-background-color: #FFFF; -fx-background-radius: 20; -fx-padding: 3;" styleClass="dateTime" stylesheets="@../style.CSS" />
+      <JFXTextField fx:id="userUpdateAgeLabel" alignment="CENTER" editable="false" focusColor="#ffa100" layoutX="99.0" layoutY="347.0" opacity="0.9" prefHeight="33.0" prefWidth="178.0" promptText="Age" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" stylesheets="@../style.CSS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="userUpdateMobileNo" alignment="CENTER" focusColor="#ffa100" layoutX="312.0" layoutY="347.0" opacity="0.9" prefHeight="33.0" prefWidth="228.0" promptText="Mobile No" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" stylesheets="@../style.CSS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextArea fx:id="userUpdatePAddress" focusColor="#ff7300" layoutX="109.0" layoutY="403.0" opacity="0.9" prefHeight="121.0" prefWidth="441.0" promptText="Enter Parmanent Address" style="-fx-background-color: #FFFF;" stylesheets="@../style.CSS" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextArea>
+      <Label alignment="CENTER" layoutX="717.0" layoutY="144.0" prefHeight="192.0" prefWidth="160.0" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" text="Upload a Photo" />
+      <ImageView fx:id="userUpdatePhotoImageView" fitHeight="173.0" fitWidth="152.0" layoutX="720.0" layoutY="155.0" pickOnBounds="true" />
+      <JFXButton id="signupButton" fx:id="userUpdateButton" defaultButton="true" layoutX="656.0" layoutY="537.0" opacity="0.82" prefHeight="51.0" prefWidth="313.0" style="-fx-background-color: #ff7543;" styleClass="signupButton" stylesheets="@../style.CSS" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label id="ll" alignment="CENTER" contentDisplay="CENTER" layoutX="971.0" layoutY="14.0" onMouseClicked="#close" prefHeight="21.0" prefWidth="25.0" styleClass="ll" stylesheets="@../style.CSS" />
+      <Label id="uploadL" fx:id="userPhotoUploadButton" alignment="CENTER" layoutX="771.0" layoutY="355.0" prefHeight="26.0" prefWidth="50.0" styleClass="uploadL" stylesheets="@../style.CSS">
+         <graphic>
+            <FontAwesomeIconView id="uploadF" glyphName="CHEVRON_CIRCLE_UP" size="25" styleClass="uploadF" wrappingWidth="16.14285659790039" />
+         </graphic>
+      </Label>
+      <Label alignment="CENTER" layoutY="8.0" prefHeight="33.0" prefWidth="996.0" style="-fx-background-color: #005cb2;" text="User UpdateForm" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label id="ll" alignment="CENTER" contentDisplay="CENTER" layoutX="970.0" layoutY="14.0" onMouseClicked="#close" prefHeight="21.0" prefWidth="25.0" styleClass="ll" stylesheets="@../style.CSS">
+         <graphic>
+            <FontAwesomeIconView id="uu" glyphName="CLOSE" styleClass="uu" />
+         </graphic>
+      </Label>
+      <Separator layoutX="614.0" layoutY="65.0" orientation="VERTICAL" prefHeight="586.0" prefWidth="0.0" />
+      <Label alignment="CENTER" layoutX="21.0" layoutY="10.0" prefHeight="30.0" prefWidth="29.0" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="userBackButton" fitHeight="20.0" fitWidth="20.0" layoutX="25.0" layoutY="15.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/eer.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminDetailsPane" prefHeight="389.0" prefWidth="965.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AdminSignupController">
+   <children>
+      <ImageView fitHeight="634.0" fitWidth="1026.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/background-flat_185832.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" layoutY="14.0" lineSpacing="23.0" prefHeight="38.0" prefWidth="1026.0" style="-fx-background-color: #263238;" text="Admin Details" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="26.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <AnchorPane fx:id="ovarAllpane" layoutX="94.0" layoutY="108.0">
+         <children>
+            <JFXTextField fx:id="adminFirstNmae" alignment="CENTER" focusColor="#839ce8" prefHeight="30.0" prefWidth="429.0" promptText="Firstname" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="adminLastName" alignment="CENTER" focusColor="#839ce8" layoutY="47.0" prefHeight="30.0" prefWidth="429.0" promptText="Lastname" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="adminUserName" alignment="CENTER" focusColor="#839ce8" layoutY="92.0" prefHeight="30.0" prefWidth="429.0" promptText="Username" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="adminPassword" alignment="CENTER" layoutY="142.0" prefHeight="30.0" prefWidth="429.0" promptText="Password" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXComboBox fx:id="adminGender" layoutY="194.0" prefHeight="33.0" prefWidth="184.0" promptText="Select Gender" style="-fx-background-color: #FFFF; -fx-background-radius: 20; -fx-padding: 4;" />
+            <JFXDatePicker fx:id="adminAge" defaultColor="#e88c0c" layoutX="206.0" layoutY="195.0" prefHeight="30.0" prefWidth="213.0" promptText="Select Age" style="-fx-background-color: #FFFF; -fx-background-radius: 20; -fx-padding: 3;" />
+            <JFXButton fx:id="adminSignUpButton" defaultButton="true" layoutY="295.0" prefHeight="30.0" prefWidth="429.0" style="-fx-background-color: #4f5b62;" text="SignUp" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="adminShowAge" alignment="CENTER" editable="false" focusColor="#90acff" layoutX="83.0" layoutY="241.0" prefHeight="31.0" prefWidth="246.0" promptText="Age" style="-fx-background-color: #FFFF; -fx-background-radius: 20;" />
+            <Label layoutX="593.0" prefHeight="159.0" prefWidth="153.0" style="-fx-background-color: #FFFF;" />
+            <ImageView fx:id="adminImageView" fitHeight="151.0" fitWidth="141.0" layoutX="599.0" layoutY="5.0" pickOnBounds="true" />
+            <Label layoutX="648.0" layoutY="171.0" prefHeight="38.0" prefWidth="47.0" style="-fx-background-color: #FFFF; -fx-background-radius: 150;" />
+            <ImageView fx:id="adminUploadButton" fitHeight="22.0" fitWidth="30.0" layoutX="661.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-upload-26.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="adminConfirmationLabel" layoutX="761.0" layoutY="20.0" prefHeight="22.0" prefWidth="240.0" text="Succesfully Added" textFill="WHITE" visible="false" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="38.0" prefWidth="41.0" style="-fx-background-color: #FFFF; -fx-background-radius: 150;" />
+      <ImageView fx:id="adminLogoutButton" fitHeight="22.0" fitWidth="30.0" layoutX="24.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-logout-rounded-left-24.png" />
+         </image>
+      </ImageView>
+      <Label id="ll" alignment="CENTER" contentDisplay="CENTER" layoutX="1001.0" layoutY="23.0" onMouseClicked="#close" prefHeight="21.0" prefWidth="25.0" styleClass="ll" stylesheets="@../style.CSS">
+         <graphic>
+            <FontAwesomeIconView id="uu" glyphName="CLOSE" styleClass="uu" />
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>

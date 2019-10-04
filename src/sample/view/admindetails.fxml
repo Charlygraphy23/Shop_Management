@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="459.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AdminDetailsController">
+   <children>
+      <ImageView fitHeight="489.0" fitWidth="912.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/Colorful-Circle-Simple-Background-Image-1.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="489.0" prefWidth="912.0">
+         <children>
+            <Label id="userDetails" fx:id="viewUsers" layoutX="526.0" layoutY="329.0" opacity="0.76" prefHeight="28.0" prefWidth="335.0" styleClass="userDetails" stylesheets="@../style.CSS" text="View Shopkeepers Details" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label fx:id="detailsNmae" alignment="CENTER" layoutX="119.0" layoutY="91.0" prefHeight="36.0" prefWidth="278.0" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="detailsUsername" alignment="CENTER" layoutX="119.0" layoutY="155.0" prefHeight="36.0" prefWidth="278.0" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="detailsGender" alignment="CENTER" layoutX="175.0" layoutY="230.0" prefHeight="36.0" prefWidth="167.0" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="detailsDob" alignment="CENTER" layoutX="185.0" layoutY="291.0" prefHeight="36.0" prefWidth="144.0" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="detailsAge" alignment="CENTER" layoutX="181.0" layoutY="345.0" prefHeight="36.0" prefWidth="144.0" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="96.0" prefHeight="27.0" prefWidth="51.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="160.0" prefHeight="27.0" prefWidth="97.0" text="Username" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="235.0" prefHeight="27.0" prefWidth="97.0" text="Gender" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="296.0" prefHeight="27.0" prefWidth="97.0" text="DOB" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="350.0" prefHeight="27.0" prefWidth="97.0" text="Age" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="545.0" layoutY="76.0" prefHeight="180.0" prefWidth="144.0" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="adminPhoto" fitHeight="165.0" fitWidth="133.0" layoutX="552.0" layoutY="83.0" pickOnBounds="true" />
+      <Label fx:id="detailsLastupdate" alignment="CENTER_RIGHT" layoutX="395.0" layoutY="301.0" opacity="0.54" prefHeight="27.0" prefWidth="371.0" text="Last Updated -" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="4.0" layoutY="8.0" prefHeight="30.0" prefWidth="905.0" style="-fx-background-color: #000051;" text="Admin Details Form" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="25.0" layoutY="8.0" prefHeight="30.0" prefWidth="29.0" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="766.0" layoutY="247.0" prefHeight="30.0" prefWidth="29.0" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="adminUpdatedetailsButton" fitHeight="20.0" fitWidth="20.0" layoutX="770.0" layoutY="251.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/icons8-update-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="adminLogOutButton" fitHeight="20.0" fitWidth="20.0" layoutX="29.0" layoutY="13.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/eer.png" />
+         </image>
+      </ImageView>
+      <Label id="ll" alignment="CENTER" contentDisplay="CENTER" layoutX="887.0" layoutY="13.0" onMouseClicked="#close" prefHeight="21.0" prefWidth="25.0" styleClass="ll" stylesheets="@../style.CSS">
+         <graphic>
+            <FontAwesomeIconView id="uu" glyphName="CLOSE" onMouseClicked="#close" styleClass="uu" />
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>

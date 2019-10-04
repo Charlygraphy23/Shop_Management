@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="frontPagepane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="1026.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.FrontPageController">
+   <children>
+      <ImageView fitHeight="624.0" fitWidth="1026.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/d8a86ceb9d31f6f91a6eec24facac178.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="sildePage" layoutX="-9.0" layoutY="-9.0">
+         <children>
+            <Label layoutX="9.0" layoutY="9.0" opacity="0.3" prefHeight="624.0" prefWidth="334.0" style="-fx-background-color: #FFFF;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="74.0" layoutY="77.0" prefHeight="54.0" prefWidth="205.0" text="Login Page" textFill="WHITE">
+               <font>
+                  <Font name="Script MT Bold" size="44.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="adminButton" alignment="CENTER" layoutX="92.0" layoutY="451.0" prefHeight="40.0" prefWidth="132.0" style="-fx-border-color: #FFFF; -fx-border-radius: 20;" text="Admin Login" textFill="WHITE">
+               <font>
+                  <Font name="Maiandra GD" size="17.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </JFXButton>
+            <Label fx:id="userlabel" layoutX="141.0" layoutY="131.0" text="User Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="userbutton" alignment="CENTER" layoutX="92.0" layoutY="458.0" prefHeight="40.0" prefWidth="132.0" style="-fx-border-color: #FFFF; -fx-border-radius: 20;" text="User Login" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Maiandra GD" size="17.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </JFXButton>
+            <Label fx:id="adminLabel" layoutX="141.0" layoutY="131.0" text="Admin Login" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="userLoginPage" layoutX="492.0" layoutY="113.0" prefHeight="331.0" prefWidth="492.0">
+         <children>
+            <JFXTextField fx:id="userUsername" alignment="CENTER" focusColor="#ff9500" layoutY="108.0" prefHeight="32.0" prefWidth="366.0" promptText="Username" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="userPassword" alignment="CENTER" focusColor="#ff8400" layoutY="171.0" prefHeight="32.0" prefWidth="366.0" promptText="Password" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="userLoginButton" layoutX="97.0" layoutY="245.0" prefHeight="40.0" prefWidth="173.0" style="-fx-background-color: #ff7961; -fx-background-radius: 20;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="145.0" prefHeight="68.0" prefWidth="76.0" style="-fx-background-color: #FFFF; -fx-background-radius: 150;" />
+            <ImageView fitHeight="54.0" fitWidth="53.0" layoutX="157.0" layoutY="7.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-user-50.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="userSignupButton" alignment="CENTER" layoutX="314.0" layoutY="292.0" prefHeight="21.0" prefWidth="167.0" style="-fx-border-color: #FFFF; -fx-border-radius: 20;" stylesheets="@../style.CSS" text="Not Yet Registerd ?" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="adminLoginPane" layoutX="109.0" layoutY="116.0" prefHeight="325.0" prefWidth="451.0" visible="false">
+         <children>
+            <JFXTextField fx:id="adminUsername" alignment="CENTER" focusColor="#ff9500" layoutY="108.0" prefHeight="32.0" prefWidth="366.0" promptText="Username" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="adminPasssword" alignment="CENTER" focusColor="#ff8400" layoutY="171.0" prefHeight="32.0" prefWidth="366.0" promptText="Password" style="-fx-background-color: #FFFF; -fx-background-radius: 20;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="adminLoginButton" layoutX="97.0" layoutY="245.0" prefHeight="40.0" prefWidth="173.0" style="-fx-background-color: #ba000d; -fx-background-radius: 20;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="145.0" prefHeight="68.0" prefWidth="76.0" style="-fx-background-color: #FFFF; -fx-background-radius: 150;" />
+            <Label fx:id="adminSignupButton" alignment="CENTER" layoutX="283.0" layoutY="300.0" prefHeight="21.0" prefWidth="167.0" style="-fx-border-color: #FFFF; -fx-border-radius: 20;" text="Not Yet Registerd ?" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="54.0" fitWidth="53.0" layoutX="157.0" layoutY="7.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-admin-settings-male-48.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label id="ll" alignment="CENTER" contentDisplay="CENTER" layoutX="1000.0" onMouseClicked="#close" prefHeight="21.0" prefWidth="25.0" styleClass="ll" stylesheets="@../style.CSS">
+         <graphic>
+            <FontAwesomeIconView id="uu" glyphName="CLOSE" styleClass="uu" />
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>

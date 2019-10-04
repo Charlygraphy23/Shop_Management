@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fb8c00;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AdminUserDetailsController">
+   <children>
+      <Label alignment="CENTER" layoutY="6.0" prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #c25e00;" text="List Of All Userser" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <JFXListView fx:id="userList" layoutX="12.0" layoutY="51.0" prefHeight="343.0" prefWidth="577.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXListView>
+      <Label id="ll" alignment="CENTER" contentDisplay="CENTER" layoutX="577.0" layoutY="4.0" onMouseClicked="#close" prefHeight="21.0" prefWidth="25.0" styleClass="ll" stylesheets="@../style.CSS">
+         <graphic>
+            <FontAwesomeIconView id="uu" glyphName="CLOSE" styleClass="uu" />
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>
